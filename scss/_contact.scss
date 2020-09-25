@@ -1,0 +1,44 @@
+.contact {
+    text-shadow: black 0px 0px 1.5px;
+    overflow: hidden;
+    height: 100%;
+    padding-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: 
+    linear-gradient(
+        to right,
+        rgba($primary-color, 0.5),
+        rgba($primary-color, 0.3)
+    ),
+    url('/white3.jpg') center top;
+    background-size: cover;
+
+    h2 {
+        margin-bottom: 0.75rem;
+        padding: 0.5rem;
+        font-size: 1.75rem;
+    }
+
+    &-details {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        font-size: 2rem;
+
+        i {
+            margin-bottom: 0.1rem;
+        }
+    }
+
+    &-email, &-phone, &-address {
+        padding: 0.5rem;
+        border: $secondary-color solid;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        
+    }
+}
